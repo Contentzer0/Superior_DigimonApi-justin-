@@ -1,0 +1,26 @@
+
+.image {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.name {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}
+.left {
+    display: flex;
+    height: 30px;
+    width: 70px;
+    justify-content: space-around;
+}
+.right {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    width: 70px;
+}

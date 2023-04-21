@@ -1,0 +1,9 @@
+header {
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(208, 104, 34);
+    height: 60px;
+    border: solid 10px red
+}
