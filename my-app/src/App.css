@@ -5,5 +5,6 @@ header {
     justify-content: center;
     background: rgb(208, 104, 34);
     height: 60px;
-    border: solid 10px red
+    border: solid 10px red;
+    font-weight: bold;
 }

@@ -42,13 +42,17 @@ const Digimon = () => {
         <div className="container">
             <p className="bold">ID: {digimon.id}</p>
             <p className="name">Name: {digimon.name} </p>
-            {digimon.images && <img src={digimon.images[0].href} className="image"/>}
+            <div className="buttonContainer">
+                <button onClick={handleClock} className="right">⬅️</button>
+                {digimon.images && <img src={digimon.images[0].href} alt="whoops" className="image"/>}
+                <button onClick={handleClick} className="left">➡️</button>
+            </div>
+            
             {digimon.types && <p className="bold">Type: {digimon.types[0]?.type}</p>}
             {digimon.levels && <p className="bold">Level: {digimon.levels[0]?.level}</p>}
             {digimon.attributes && <p className="bold">Attribute: {digimon.attributes[0]?.attribute}</p>}
             {digimon.descriptions && <p><span className="bold">Description: </span>{handleDescription()}</p>}
-            <button onClick={handleClick} className="right">Up</button>
-            <button onClick={handleClock} className="left">Down</button>
+
         </div>
     )     
 }
